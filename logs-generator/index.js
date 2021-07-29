@@ -27,7 +27,7 @@ setInterval(() => {
             level: statusCode >= 400 ? 'error' : 'info', 
             requestId: uuid(),
             method: AVAILABLE_METHODS.random(),
-            duration: randomDuration(),
+            duration: `${randomDuration()}ms`,
             route: AVAILABLE_ROUTES.random(),
             statusCode,
         });
