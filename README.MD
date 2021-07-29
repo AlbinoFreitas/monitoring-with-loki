@@ -39,4 +39,5 @@
 ## Forward Services
 
 ```kubectl port-forward svc/grafana 3000:80```
+
 ```kubectl port-forward svc/loki-loki-distributed-gateway 3100:80```
