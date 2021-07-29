@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logs-generator
+  labels:
+    app: logs-generator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logs-generator
+  template:
+    metadata:
+      labels:
+        app: logs-generator
+    spec:
+      containers:
+      - name: logs-generator
+        image: albinofreitas/logs-generator:latest
